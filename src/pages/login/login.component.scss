@@ -1,44 +1,65 @@
-mat-card{
-    width: 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
+mat-card {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
 
 
 }
 
-mat-card-content{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: 50px 10px;
+mat-card-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 10px;
 }
 
-.login-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 88%;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88%;
 }
 
 .divider {
-    display: flex;
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text */
-  }
-  
-  .line {
-    flex: 1; /* Make lines fill available space */
-    height: 1px; /* Line thickness */
-    background-color: #405D72; /* Line color */
-    margin: 0 10px; /* Space between text and lines */
-  }
-  
-  .text {
-    padding: 0 10px; /* Space around text */
-    color: #405D72; /* Text color */
-    white-space: nowrap; /* Prevent text from wrapping */
-  }
-  
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+  /* Center text */
+}
+
+.line {
+  flex: 1;
+  /* Make lines fill available space */
+  height: 1px;
+  /* Line thickness */
+  background-color: #405D72;
+  /* Line color */
+  margin: 0 10px;
+  /* Space between text and lines */
+}
+
+.text {
+  padding: 0 10px;
+  /* Space around text */
+  color: #405D72;
+  /* Text color */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+}
+
+.actions-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.email-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}

@@ -1,0 +1,79 @@
+.otp-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 88%;
+}
+
+mat-card{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+mat-card-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-card-footer{
+    width: 100%;
+    text-align: center;
+}
+
+.otp-input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adds space between inputs */
+    max-width: 300px;
+    margin: 10% auto;
+  }
+  
+  
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border: none; 
+    border-bottom: 2px solid #405D72; 
+    outline: none; 
+    background: none;
+  }
+  
+  .otp-input:focus {
+    border-bottom: 2px solid #000; /* Change line color when focused */
+  }
+  
+  /* Hide the number in the input field, show it above the line */
+  .otp-input::placeholder {
+    color: transparent; /* Hide the placeholder */
+  }
+
+  a {
+    color: #405D72; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make it bold */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+  }
+  
+  a:hover {
+    color: #2B3E50; /* Change color on hover */
+    border-bottom: 2px solid #2B3E50; /* Underline effect on hover */
+    cursor: pointer;
+  }
+
+  #msjCodigo{
+    margin-right: 1%;
+  }
+  
+  
+  
+  

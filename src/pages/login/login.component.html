@@ -1,22 +1,33 @@
 <div class="login-form">
-    <mat-card appearance="outlined">
-        <mat-card-content>
-            <mat-form-field appearance="fill">
-                <mat-label>Email</mat-label>
-                <input matInput>
-            </mat-form-field>
-            <mat-form-field appearance="fill">
-                <mat-label>Contraseña</mat-label>
-                <input matInput>
-            </mat-form-field>
-            <button mat-raised-button>Basic</button>
-            <div class="divider">
-                <span class="line"></span>
-                <span class="text">Inicio de sesión rápido</span>
-                <span class="line"></span>
-            </div>
-            <mat-icon> mail_outline</mat-icon>
-
-        </mat-card-content>
-    </mat-card>
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <hr />
+      <hr />
+      <div class="actions-section">
+        <app-generic-button
+          [labelButton]="'Iniciar sesión'"
+          (dataEmitter)="navigateToOTP()"
+        >
+        </app-generic-button>
+      </div>
+      <hr />
+      <hr />
+      <div class="divider">
+        <span class="line"></span>
+        <span class="text">Inicio de sesión rápido</span>
+        <span class="line"></span>
+      </div>
+      <div class="email-actions">
+        <mat-icon> mail_outline</mat-icon>
+      </div>
+    </mat-card-content>
+  </mat-card>
 </div>

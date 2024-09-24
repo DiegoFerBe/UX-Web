@@ -5,6 +5,8 @@ import { MatFormFieldModule } from '@angular/material/form-field'; // Import Mat
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { Router } from '@angular/router';
+import { GenericButtonComponent } from '../../components/generic-button/generic-button.component';
 
 
 
@@ -17,10 +19,17 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    GenericButtonComponent
   ],
   templateUrl: './login.component.html',
     styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+
+  constructor(private router: Router) {}
+
+  navigateToOTP() {
+    this.router.navigate(['/otp']);
+  }
 
 }

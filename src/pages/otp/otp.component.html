@@ -1,0 +1,31 @@
+<div class="otp-container">
+    <mat-card appearance="outlined">
+        <mat-card-content>
+
+            <h4>Ingresa el código de seguridad enviado a tu correo electrónico</h4>
+
+            <div class="otp-input-container">
+                <input type="text" maxlength="1" class="otp-input" (input)="onOtpChange($event, 0)" #otp0>
+                <input type="text" maxlength="1" class="otp-input" (input)="onOtpChange($event, 1)" #otp1>
+                <input type="text" maxlength="1" class="otp-input" (input)="onOtpChange($event, 2)" #otp2>
+                <input type="text" maxlength="1" class="otp-input" (input)="onOtpChange($event, 3)" #otp3>
+                <input type="text" maxlength="1" class="otp-input" (input)="onOtpChange($event, 4)" #otp4>
+                <input type="text" maxlength="1" class="otp-input" (input)="onOtpChange($event, 5)" #otp5>
+            </div>
+
+            <div class="actions-section">
+                <app-generic-button
+          [labelButton]="'Verificar'"
+          (dataEmitter)="navigateToHome()"
+        >
+        </app-generic-button>
+
+            </div>
+            <mat-card-footer>
+                <span id=msjCodigo>¿No recibiste el código?</span>
+                <a>Reenviar código</a>
+            </mat-card-footer>
+
+        </mat-card-content>
+    </mat-card>
+</div>
