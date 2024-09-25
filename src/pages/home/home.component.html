@@ -1,1 +1,54 @@
-<p>home works!</p>
+<div class="chart-container">
+  <ngx-charts-area-chart
+    [scheme]="colorScheme"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxis]="xAxis"
+    [yAxis]="yAxis"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [timeline]="timeline"
+    [results]="multi"
+    (select)="onSelect($event)"
+  >
+  </ngx-charts-area-chart>
+</div>
+<mat-grid-list cols="3" rowHeight="350px">
+  <mat-grid-tile>
+    <div id="personal-information">
+      <h3>
+        Nombre <br />
+        Apellido
+      </h3>
+      <mat-icon class="avatar-icon">person</mat-icon>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div id="statistic-information">
+      <mat-form-field appearance="fill">
+        <mat-label>Promedio de pomodoros diarios</mat-label>
+        <input matInput value="5" readonly />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Promedio de pomodoros diarios</mat-label>
+        <input matInput value="5" readonly />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Promedio de pomodoros diarios</mat-label>
+        <input matInput value="5" readonly />
+      </mat-form-field>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div id="action-buttons">
+      <button mat-button class="compress-button">
+        <mat-icon>edit</mat-icon>
+        <span class="button-text">Analitica</span>
+      </button>
+      <button mat-button class="compress-button">
+        <mat-icon> insert_chart_outlined</mat-icon>
+        <span class="button-text">Perfil</span>
+      </button>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
