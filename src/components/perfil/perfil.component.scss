@@ -1,0 +1,50 @@
+@import '../../styles/colors';
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; // Ajusta el ancho máximo del formulario
+    margin: 0 auto; // Centra el formulario horizontalmente
+    background-color: white; // Fondo blanco
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Añade una sombra para darle un efecto de tarjeta
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #405D72; // Ajusta el color según tus necesidades
+    margin-bottom: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  .time-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .save-button {
+    background-color: $gray-color; // Color de fondo azul
+    color: #F7E7DC; // Color de letra
+  }
+  
+  .save-button span {
+    color: #F7E7DC !important; // Asegúrate de que el color de la letra se aplique correctamente
+  }
+  
+  .cancel-button {
+    background-color: white; // Ajusta el color según tus necesidades
+    
+  }

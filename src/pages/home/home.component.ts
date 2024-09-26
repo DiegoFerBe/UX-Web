@@ -56,4 +56,7 @@ export class HomeComponent {
   navigateToAnalytics(){
     this.router.navigate(['/pomo-reg']);
   }
+  navigateToProfile(){
+    this.router.navigate(['/perfil']);
+  }
 }
