@@ -1,5 +1,6 @@
 <div class="chart-container">
-  <ngx-charts-area-chart
+  <div>
+    <ngx-charts-area-chart
     [scheme]="colorScheme"
     [showXAxisLabel]="showXAxisLabel"
     [showYAxisLabel]="showYAxisLabel"
@@ -12,6 +13,8 @@
     (select)="onSelect($event)"
   >
   </ngx-charts-area-chart>
+  </div>
+
 </div>
 <mat-grid-list cols="3" rowHeight="350px">
   <mat-grid-tile>
