@@ -1,3 +1,6 @@
+@import '../../styles/colors';
+
+
 .otp-container{
     display: flex;
     flex-direction: column;
@@ -21,6 +24,12 @@ mat-card-content{
     margin: 50px 10px;
     justify-content: center;
     align-items: center;
+
+    h4{
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: normal;
+    }
 }
 
 mat-card-footer{
@@ -31,25 +40,29 @@ mat-card-footer{
 .otp-input-container {
     display: flex;
     justify-content: space-between;
-    gap: 10px; /* Adds space between inputs */
-    max-width: 300px;
+    gap: 40px; /* Adds space between inputs */
+    max-width: 100%;
     margin: 10% auto;
+
+    input{
+      color: $orange-color;
+    }
   }
   
   
   .otp-input {
     width: 40px;
     height: 40px;
-    font-size: 18px;
+    font-size: 30px;
     text-align: center;
     border: none; 
-    border-bottom: 2px solid #405D72; 
+    border-bottom: 2px solid $orange-color; 
     outline: none; 
     background: none;
   }
   
   .otp-input:focus {
-    border-bottom: 2px solid #000; /* Change line color when focused */
+    border-bottom: 2px solid $orange-color; /* Change line color when focused */
   }
   
   /* Hide the number in the input field, show it above the line */
