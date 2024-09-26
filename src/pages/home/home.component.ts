@@ -6,6 +6,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -45,11 +46,14 @@ export class HomeComponent {
     domain: ['#E07A5F'],
   };
 
-  constructor() {
+  constructor(private router: Router) {
     Object.assign(this, { multi });
   }
 
   onSelect(event: any) {
     console.log(event);
+  }
+  navigateToAnalytics(){
+    this.router.navigate(['/pomo-reg']);
   }
 }

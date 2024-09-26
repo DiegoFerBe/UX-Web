@@ -41,7 +41,9 @@
   </mat-grid-tile>
   <mat-grid-tile>
     <div id="action-buttons">
-      <button mat-button class="compress-button">
+      <button mat-button class="compress-button"
+      (click)="navigateToAnalytics()"
+      >
         <mat-icon>edit</mat-icon>
         <span class="button-text">Analitica</span>
       </button>

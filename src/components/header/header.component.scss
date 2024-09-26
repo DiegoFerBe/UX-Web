@@ -1,15 +1,36 @@
 header {
     background-color: #405D72;
-    /* Change to your desired background color */
     padding: 20px;
     text-align: center;
-    /* Center the content */
     height: 12vh;
-}
-
-.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .title {
     color: white;
-    /* Change to your desired text color */
     margin: 0;
-    /* Remove default margin */
-}
+    flex: 1;
+    text-align: center;
+  }
+  
+  .header-buttons {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .config-button, .logout-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .config-button mat-icon, .logout-button mat-icon {
+    font-size: 1.5rem;
+  }
